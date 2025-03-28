@@ -72,13 +72,12 @@
 
 ## 📌 Roadmap
 
-- [x] Configurar base de datos con Prisma y Railway
-- [x] Crear layout base (Sidebar + Dashboard)
-- [ ] Mostrar productos desde la base de datos
-- [ ] Agregar formulario para nuevos productos
-- [ ] Registrar movimientos de stock
-- [ ] Dashboard de métricas
-- [ ] Integración con OpenAI para IA
+- [x] Inventory system MVP
+- [ ] User roles (Admin, Employee)
+- [ ] Metrics dashboard
+- [ ] AI-generated insights
+- [ ] AI-powered reorder assistant
+- [ ] Mobile-friendly version
 
 ---
 
