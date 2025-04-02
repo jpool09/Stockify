@@ -39,7 +39,7 @@
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/tuusuario/stockify.git
+   git clone https://github.com/jpool09/stockify.git
    cd stockify
 
 2. **Install dependencies**
