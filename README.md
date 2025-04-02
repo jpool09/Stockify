@@ -1,34 +1,90 @@
-<<<<<<< HEAD
-# Stockify
-Stockify is an intelligent inventory management web app designed for fast food restaurants and small food businesses. Built with modern web technologies and AI, it helps you track, visualize, and optimize your inventory in real-time.
-=======
-# Create T3 App
+# 📦 Stockify – Smart Inventory for Fast Food Businesses, Powered by AI
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+**Stockify** is a modern inventory management web app designed for fast food restaurants and food businesses. It helps you track stock, view key metrics, and make smarter decisions — all with the power of AI.
 
-## What's next? How do I make an app with this?
+---
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## 🚀 Features
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+- 📦 Product & stock management
+- 📊 Real-time usage metrics and trends
+- 🧠 AI-powered daily summaries and insights
+- 🛒 Smart restocking suggestions
+- 👥 Multi-user support (Admins, Employees)
+- 🔐 Secure authentication
+- 🌐 SaaS-ready architecture
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+---
 
-## Learn More
+## ⚙️ Tech Stack
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+- **Frontend**: [Next.js 14](https://nextjs.org/) + [Tailwind CSS](https://tailwindcss.com/) + [shadcn/ui](https://ui.shadcn.com/)
+- **Backend**: [tRPC](https://trpc.io/) + [Prisma](https://www.prisma.io/)
+- **Database**: PostgreSQL (hosted on [Railway](https://railway.app))
+- **Auth**: Auth.js (formerly NextAuth)
+- **AI**: OpenAI API
+- **Deployment**: Vercel + Railway
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+---
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## 📂 Project Structure
 
-## How do I deploy this?
+/apps /web → Next.js frontend /api → Backend API (tRPC routers)
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
->>>>>>> 0e3dc60 (Initial commit - Stockify MVP setup)
+/prisma → Prisma schema & migrations /packages /ui → Shared components /utils → Shared logic
+
+---
+
+## 🧪 Getting Started
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/tuusuario/stockify.git
+   cd stockify
+
+2. **Install dependencies**
+    ```bash
+    npm install
+
+3. **Set up your .env file Copy .env.example to .env and fill in your DB + Auth + OpenAI keys:**
+    ```bash
+    DATABASE_URL="your_postgres_url"
+    NEXTAUTH_SECRET="your_secret"
+    OPENAI_API_KEY="your_openai_api_key"
+
+4. **Push schema to DB**
+    ```bash
+    npx prisma db push
+
+5. **Run the dev server**
+    ```bash
+    npm run dev
+
+---
+
+## 🧠 AI Features (Coming soon!)
+
+- Automated daily summaries of inventory movement
+- Forecasted usage per product
+- Smart restock generator
+
+---
+
+## 📌 Roadmap
+
+- [x] Inventory system MVP
+- [ ] User roles (Admin, Employee)
+- [ ] Metrics dashboard
+- [ ] AI-generated insights
+- [ ] AI-powered reorder assistant
+- [ ] Mobile-friendly version
+
+---
+
+## 🔥 Inspiration
+
+Stockify is inspired by the build fast, ship faster mentality of indie hackers like Pieter Levels, and powered by modern AI tools to empower small food businesses.
+
+---
+
+## 🧑‍💻 Made with ❤️ by Jean Pool Cruz
